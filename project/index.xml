@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Jasmine Anand</title>
+    <link>/project/</link>
+    <description>Recent content in Projects on Jasmine Anand</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language><atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Project 1</title>
+      <link>/project/project1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/project/project1/</guid>
+      <description>Introduction I decided to work with two Marvel datasets because I am a huge Marvel fan. I have watched all the Marvel movies at least 3 times and have also read a lot of the Marvel comic books. Through this projct I wanted to see if I can find any associations through the datasets I have chosen. For this Project, I will be analyzing 2 different Marvel datasets. The first dataset, called stats, has information on abilities of each of the Marvel Characters, such as intelligence, strength, power, and speed.</description>
+    </item>
+    
+    <item>
+      <title>Project 2</title>
+      <link>/project/project2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/project/project2/</guid>
+      <description>Introduction For this project, I will be using the Titanic dataset. I am interested to see if I can see some relationship between survivial rate and other factors such as class, gender, and age.  This dataset has 14 variables. The variable pclass states the passenger class, which can be 1,2, or 3. The variable sibsp is the number of siblings/spouses the person on board and the variable parch is the number of parents/children on board.</description>
+    </item>
+    
+  </channel>
+</rss>
