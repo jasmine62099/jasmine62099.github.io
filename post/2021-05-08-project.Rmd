@@ -1,6 +1,74 @@
-+++
-title = ""
-description = ""
-tags = []
-categories = []
-+++
+---
+title: "Python and R"
+author: "Jasmine Anand"
+date: 2021-05-08T21:13:14-05:00
+categories: ["R", "Python"]
+tags: ["R", "python"]
+---
+
+# This is a Guide on how to use Python and R together. 
+
+### First let's discuss some simple Python coding
+
+##### Printing/Displaying items in Python
+This is done using a print() command
+```{python}
+print("Hello World")
+```
+##### Assigning values in Python
+This is done using an = operator
+```{python}
+a = "Hello World "
+b= 5
+
+print (a*b) #this will print a five times
+```
+##### Working with lists in Python
+A python list is creates using square brackets- []. One difference between R and Python vectors/lists is that Python list index starts at 0 rather than 1
+```{python}
+c = [1,2,3,4,5]
+print (c[0]) #will give you the first element
+print (c[1]) #this will give you the second element
+print (c[0:3]) #this will return the first index to the third, but does NOT include the third index
+
+```
+
+# Now let's work with reticuate
+
+##### First we need call the library in r
+```{r}
+library(reticulate)
+```
+
+
+##### Lets now create variables in both r and python
+This is a r variable
+```{r}
+
+r_var<- c(1,2,3,4,5,6,7)
+
+```
+
+This is a python variable
+```{python}
+
+p_var = [8,9,10]
+
+```
+
+
+##### Accessing Python in R
+This is done using a py$varName where varName is the variable name in python
+```{r}
+c(r_var, py$p_var)
+```
+##### Accessing R in Python
+This is done using a r.varName where varName is the variable name in r
+```{python}
+
+print(r.r_var + p_var)
+
+```
+# Conclusion
+
+##### Being able to communicate between teo language is extremely powerful because you are able to use unique funtionalities of each together. Python has several different other libraries/packages such as pandas and matplot.lib that make it easier to go through the data.

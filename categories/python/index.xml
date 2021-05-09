@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>R on Jasmine Anand</title>
-    <link>/categories/r/</link>
-    <description>Recent content in R on Jasmine Anand</description>
+    <title>Python on Jasmine Anand</title>
+    <link>/categories/python/</link>
+    <description>Recent content in Python on Jasmine Anand</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Sat, 08 May 2021 21:13:14 -0500</lastBuildDate><atom:link href="/categories/r/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 08 May 2021 21:13:14 -0500</lastBuildDate><atom:link href="/categories/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Python and R</title>
       <link>/post/2021/05/08/python-and-r/</link>

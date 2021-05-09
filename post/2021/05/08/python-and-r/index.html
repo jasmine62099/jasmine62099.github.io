@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Jasmine Anand" />
+    
+    <link rel="shortcut icon" type="image/x-icon" href="../../../../../img/favicon.ico">
+    <title>Python and R</title>
+    <meta name="generator" content="Hugo 0.83.1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../../../../../css/main.css" />
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,200bold,400old" />
+    
+    <!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+    
+  </head>
+
+  <body>
+    <div id="wrap">
+      
+      <nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="../../../../../"><i class="fa fa-home"></i></a>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="navbar-collapse collapse" id="navbar">
+      <ul class="nav navbar-nav navbar-right">
+      
+        
+        <li><a href="../../../../../post/">BLOG</a></li>
+        
+        <li><a href="../../../../../projects/">PROJECTS</a></li>
+        
+        <li><a href="../../../../../resume/">RESUME</a></li>
+        
+      
+      </ul>
+    </div>
+  </div>
+</nav>
+
+      <div class="container">
+        <div class="blog-post">
+          <h3>
+            <strong><a href="../../../../../post/2021/05/08/python-and-r/">Python and R</a></strong>
+          </h3>
+        </div>
+ 
+<div class="blog-title">
+          <h4>
+         May 8, 2021 
+            &nbsp;&nbsp;
+            
+            <span class="label label-success">R</span>
+            
+            <span class="label label-success">python</span>
+            
+          </h4>
+        </div>
+
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <div class="blogpost">
+              
+
+
+<div id="this-is-a-guide-on-how-to-use-python-and-r-together." class="section level1">
+<h1>This is a Guide on how to use Python and R together.</h1>
+<div id="first-lets-discuss-some-simple-python-coding" class="section level3">
+<h3>First let’s discuss some simple Python coding</h3>
+<div id="printingdisplaying-items-in-python" class="section level5">
+<h5>Printing/Displaying items in Python</h5>
+<p>This is done using a print() command</p>
+<pre class="python"><code>print(&quot;Hello World&quot;)</code></pre>
+<pre><code>## Hello World</code></pre>
+</div>
+<div id="assigning-values-in-python" class="section level5">
+<h5>Assigning values in Python</h5>
+<p>This is done using an = operator</p>
+<pre class="python"><code>a = &quot;Hello World &quot;
+b= 5
+
+print (a*b) #this will print a five times</code></pre>
+<pre><code>## Hello World Hello World Hello World Hello World Hello World</code></pre>
+</div>
+<div id="working-with-lists-in-python" class="section level5">
+<h5>Working with lists in Python</h5>
+<p>A python list is creates using square brackets- []. One difference between R and Python vectors/lists is that Python list index starts at 0 rather than 1</p>
+<pre class="python"><code>c = [1,2,3,4,5]
+print (c[0]) #will give you the first element</code></pre>
+<pre><code>## 1</code></pre>
+<pre class="python"><code>print (c[1]) #this will give you the second element</code></pre>
+<pre><code>## 2</code></pre>
+<pre class="python"><code>print (c[0:3]) #this will return the first index to the third, but does NOT include the third index</code></pre>
+<pre><code>## [1, 2, 3]</code></pre>
+</div>
+</div>
+</div>
+<div id="now-lets-work-with-reticuate" class="section level1">
+<h1>Now let’s work with reticuate</h1>
+<div id="first-we-need-call-the-library-in-r" class="section level5">
+<h5>First we need call the library in r</h5>
+<pre class="r"><code>library(reticulate)</code></pre>
+</div>
+<div id="lets-now-create-variables-in-both-r-and-python" class="section level5">
+<h5>Lets now create variables in both r and python</h5>
+<p>This is a r variable</p>
+<pre class="r"><code>r_var&lt;- c(1,2,3,4,5,6,7)</code></pre>
+<p>This is a python variable</p>
+<pre class="python"><code>
+p_var = [8,9,10]</code></pre>
+</div>
+<div id="accessing-python-in-r" class="section level5">
+<h5>Accessing Python in R</h5>
+<p>This is done using a py$varName where varName is the variable name in python</p>
+<pre class="r"><code>c(r_var, py$p_var)</code></pre>
+<pre><code>##  [1]  1  2  3  4  5  6  7  8  9 10</code></pre>
+</div>
+<div id="accessing-r-in-python" class="section level5">
+<h5>Accessing R in Python</h5>
+<p>This is done using a r.varName where varName is the variable name in r</p>
+<pre class="python"><code>
+print(r.r_var + p_var)</code></pre>
+<pre><code>## [1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8, 9, 10]</code></pre>
+</div>
+</div>
+<div id="conclusion" class="section level1">
+<h1>Conclusion</h1>
+<div id="being-able-to-communicate-between-teo-language-is-extremely-powerful-because-you-are-able-to-use-unique-funtionalities-of-each-together.-python-has-several-different-other-librariespackages-such-as-pandas-and-matplot.lib-that-make-it-easier-to-go-through-the-data." class="section level5">
+<h5>Being able to communicate between teo language is extremely powerful because you are able to use unique funtionalities of each together. Python has several different other libraries/packages such as pandas and matplot.lib that make it easier to go through the data.</h5>
+</div>
+</div>
+
+            
+        <hr>         <div class="related-posts">
+                <h5>Related Posts</h5>
+                
+              </div> 
+            </div>
+          </div>
+
+   <hr>  <div class="disqus">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+
+    (function() {
+      
+      
+      if (window.location.hostname == "localhost")
+        return;
+
+      var disqus_shortname = '';
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div> 
+        </div>
+      </div>
+    </div>
+
+    
+    <footer>
+  <div id="footer">
+    <div class="container">
+      <p class="text-muted">&copy; All rights reserved. Powered by <a href="https://gohugo.io/">Hugo</a> and
+      <a href="http://www.github.com/nurlansu/hugo-sustain/">sustain</a> with ♥</p>
+    </div>
+  </div>
+</footer>
+<div class="footer"></div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="../../../../../js/docs.min.js"></script>
+<script src="../../../../../js/main.js"></script>
+
+<script src="../../../../../js/ie10-viewport-bug-workaround.js"></script>
+
+
+    
+  </body>
+</html>
