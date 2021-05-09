@@ -72,3 +72,5 @@ print(r.r_var + p_var)
 # Conclusion
 
 ##### Being able to communicate between teo language is extremely powerful because you are able to use unique funtionalities of each together. Python has several different other libraries/packages such as pandas and matplot.lib that make it easier to go through the data.
+
+![](/post/2021-05-08-project_files/R-vs-Python.png)
